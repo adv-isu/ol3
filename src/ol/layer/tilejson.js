@@ -28,12 +28,12 @@ ol.tilejson.grids_ = [];
 
 
 /**
+ * @expose
  * @param {TileJSON} tileJSON Tile JSON.
  */
 var grid = function(tileJSON) {
   ol.tilejson.grids_.push(tileJSON);
 };
-goog.exportSymbol('grid', grid);
 
 
 

@@ -52,63 +52,48 @@ goog.inherits(ol.layer.Layer, ol.Object);
 
 
 /**
+ * @expose
  * @return {number} Brightness.
  */
 ol.layer.Layer.prototype.getBrightness = function() {
   return /** @type {number} */ this.get(ol.layer.LayerProperty.BRIGHTNESS);
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'getBrightness',
-    ol.layer.Layer.prototype.getBrightness);
 
 
 /**
+ * @expose
  * @return {number} Contrast.
  */
 ol.layer.Layer.prototype.getContrast = function() {
   return /** @type {number} */ this.get(ol.layer.LayerProperty.CONTRAST);
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'getContrast',
-    ol.layer.Layer.prototype.getContrast);
 
 
 /**
+ * @expose
  * @return {number} Hue.
  */
 ol.layer.Layer.prototype.getHue = function() {
   return /** @type {number} */ this.get(ol.layer.LayerProperty.HUE);
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'getHue',
-    ol.layer.Layer.prototype.getHue);
 
 
 /**
+ * @expose
  * @return {number} Opacity.
  */
 ol.layer.Layer.prototype.getOpacity = function() {
   return /** @type {number} */ this.get(ol.layer.LayerProperty.OPACITY);
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'getOpacity',
-    ol.layer.Layer.prototype.getOpacity);
 
 
 /**
+ * @expose
  * @return {number} Saturation.
  */
 ol.layer.Layer.prototype.getSaturation = function() {
   return /** @type {number} */ this.get(ol.layer.LayerProperty.SATURATION);
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'getSaturation',
-    ol.layer.Layer.prototype.getSaturation);
 
 
 /**
@@ -120,15 +105,12 @@ ol.layer.Layer.prototype.getStore = function() {
 
 
 /**
+ * @expose
  * @return {boolean} Visible.
  */
 ol.layer.Layer.prototype.getVisible = function() {
   return /** @type {boolean} */ this.get(ol.layer.LayerProperty.VISIBLE);
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'getVisible',
-    ol.layer.Layer.prototype.getVisible);
 
 
 /**
@@ -140,6 +122,7 @@ ol.layer.Layer.prototype.isReady = function() {
 
 
 /**
+ * @expose
  * @param {number} brightness Brightness.
  */
 ol.layer.Layer.prototype.setBrightness = function(brightness) {
@@ -148,13 +131,10 @@ ol.layer.Layer.prototype.setBrightness = function(brightness) {
     this.set(ol.layer.LayerProperty.BRIGHTNESS, brightness);
   }
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'setBrightness',
-    ol.layer.Layer.prototype.setBrightness);
 
 
 /**
+ * @expose
  * @param {number} contrast Contrast.
  */
 ol.layer.Layer.prototype.setContrast = function(contrast) {
@@ -163,13 +143,10 @@ ol.layer.Layer.prototype.setContrast = function(contrast) {
     this.set(ol.layer.LayerProperty.CONTRAST, contrast);
   }
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'setContrast',
-    ol.layer.Layer.prototype.setContrast);
 
 
 /**
+ * @expose
  * @param {number} hue Hue.
  */
 ol.layer.Layer.prototype.setHue = function(hue) {
@@ -177,13 +154,10 @@ ol.layer.Layer.prototype.setHue = function(hue) {
     this.set(ol.layer.LayerProperty.HUE, hue);
   }
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'setHue',
-    ol.layer.Layer.prototype.setHue);
 
 
 /**
+ * @expose
  * @param {number} opacity Opacity.
  */
 ol.layer.Layer.prototype.setOpacity = function(opacity) {
@@ -192,13 +166,10 @@ ol.layer.Layer.prototype.setOpacity = function(opacity) {
     this.set(ol.layer.LayerProperty.OPACITY, opacity);
   }
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'setOpacity',
-    ol.layer.Layer.prototype.setOpacity);
 
 
 /**
+ * @expose
  * @param {number} saturation Saturation.
  */
 ol.layer.Layer.prototype.setSaturation = function(saturation) {
@@ -207,13 +178,10 @@ ol.layer.Layer.prototype.setSaturation = function(saturation) {
     this.set(ol.layer.LayerProperty.SATURATION, saturation);
   }
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'setSaturation',
-    ol.layer.Layer.prototype.setSaturation);
 
 
 /**
+ * @expose
  * @param {boolean} visible Visible.
  */
 ol.layer.Layer.prototype.setVisible = function(visible) {
@@ -222,7 +190,3 @@ ol.layer.Layer.prototype.setVisible = function(visible) {
     this.set(ol.layer.LayerProperty.VISIBLE, visible);
   }
 };
-goog.exportProperty(
-    ol.layer.Layer.prototype,
-    'setVisible',
-    ol.layer.Layer.prototype.setVisible);
