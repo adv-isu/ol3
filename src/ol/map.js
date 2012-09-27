@@ -10,6 +10,7 @@ goog.require('goog.array');
 goog.require('goog.debug.Logger');
 goog.require('goog.dispose');
 goog.require('goog.dom');
+goog.require('goog.dom.BufferedViewportSizeMonitor');
 goog.require('goog.dom.ViewportSizeMonitor');
 goog.require('goog.events');
 goog.require('goog.events.BrowserEvent');
@@ -186,7 +187,8 @@ ol.Map = function(container, mapOptionsLiteral) {
   /**
    * @private
    */
-  this.viewportSizeMonitor_ = new goog.dom.ViewportSizeMonitor();
+  this.viewportSizeMonitor_ = new goog.dom.BufferedViewportSizeMonitor(
+      new goog.dom.ViewportSizeMonitor());
 
   goog.events.listen(this.viewportSizeMonitor_, goog.events.EventType.RESIZE,
       this.handleBrowserWindowResize, false, this);
